@@ -4,16 +4,14 @@
       <meta charset="UTF-8">
       <title>Simple HTML Form</title>
       <link rel="stylesheet" href="index.css">
-      <script src="index.js"></script>
+      <script src="index.js" type="module"></script>
   </head>
 
   <body>
-    <form name="searchForm" id="search-form" onsubmit="return validateForm()">
+    <form name="searchForm" id="search-form"">
       <div class="row">
-        <input type="text" name="name" />
-        <button class="search">
-          <img src="" alt="search icon" />
-        </button>
+        <input type="text" name="search" id="search-bar" />
+        <button class="search" id="search-btn">Search</button>
       </div>
     </form>
 
